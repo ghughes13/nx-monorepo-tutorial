@@ -48,6 +48,21 @@
       "plugin": "@nx/jest/plugin",
       "options": {
         "targetName": "test"
+      },
+      "exclude": ["apps/wordle-api-e2e/**/*"]
+    },
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
       }
     }
   ],
@@ -59,6 +74,21 @@
   "generators": {
     "@nx/next": {
       "application": {
+        "style": "tailwind",
+        "linter": "eslint"
+      }
+    },
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "tailwind",
+        "linter": "eslint",
+        "bundler": "webpack"
+      },
+      "component": {
+        "style": "tailwind"
+      },
+      "library": {
         "style": "tailwind",
         "linter": "eslint"
       }

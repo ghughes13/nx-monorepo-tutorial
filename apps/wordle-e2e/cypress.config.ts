@@ -6,8 +6,8 @@ export default defineConfig({
   e2e: {
     ...nxE2EPreset(__filename, {
       cypressDir: 'src',
-      webServerCommands: { default: 'nx run adoptable:start' },
-      ciWebServerCommand: 'nx run adoptable:serve-static',
+      webServerCommands: { default: 'nx run wordle:start' },
+      ciWebServerCommand: 'nx run wordle:serve-static',
     }),
     baseUrl: 'http://localhost:3000',
   },

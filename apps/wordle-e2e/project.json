@@ -1,0 +1,9 @@
+{
+  "name": "wordle-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/wordle-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["wordle"],
+  "// targets": "to see all targets run: nx show project wordle-e2e --web",
+  "targets": {}
+}

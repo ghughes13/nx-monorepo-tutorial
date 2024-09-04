@@ -23,9 +23,10 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/adoptable/.next/types/**/*.ts",
-    "../../dist/apps/adoptable/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "../../apps/wordle/.next/types/**/*.ts",
+    "../../dist/apps/wordle/.next/types/**/*.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }

@@ -1,0 +1,17 @@
+{
+  "name": "wordle-api-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "implicitDependencies": ["wordle-api"],
+  "targets": {
+    "e2e": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{e2eProjectRoot}"],
+      "options": {
+        "jestConfig": "apps/wordle-api-e2e/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "dependsOn": ["wordle-api:build"]
+    }
+  }
+}
